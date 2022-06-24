@@ -14,3 +14,4 @@ C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyalty
 C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.dll
 C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.pdb
 C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.genruntimeconfig.cache
+C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.Form2.resources

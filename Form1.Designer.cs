@@ -100,7 +100,7 @@ namespace Loyaltyapp
             // 
             // signinButton
             // 
-            this.signinButton.Location = new System.Drawing.Point(153, 351);
+            this.signinButton.Location = new System.Drawing.Point(145, 351);
             this.signinButton.Name = "signinButton";
             this.signinButton.Size = new System.Drawing.Size(94, 29);
             this.signinButton.TabIndex = 6;
@@ -111,7 +111,7 @@ namespace Loyaltyapp
             // 
             this.registerLabel.AutoSize = true;
             this.registerLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.registerLabel.Location = new System.Drawing.Point(164, 419);
+            this.registerLabel.Location = new System.Drawing.Point(162, 404);
             this.registerLabel.Name = "registerLabel";
             this.registerLabel.Size = new System.Drawing.Size(63, 20);
             this.registerLabel.TabIndex = 7;
@@ -132,7 +132,7 @@ namespace Loyaltyapp
             this.Controls.Add(this.label1);
             this.Controls.Add(this.logoBox);
             this.Name = "AppLogin";
-            this.Text = "GAME Loyalty";
+            this.Text = "GAME Loyalty Login";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).EndInit();
             this.ResumeLayout(false);
