@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "i7N7PE/Y0ac7AVvpBI9qmymkYXpgQE2Toijyaz5hTbPMXshdD6SefwfqjXkDchl5SWpf3Gnu3vfjcgAPs8WaOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Authorised User\\source\\repos\\Loyaltyapp\\Loyaltyapp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Authorised User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
