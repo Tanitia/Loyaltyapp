@@ -1,11 +1,16 @@
+C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.csprojAssemblyReference.cache
 C:\Users\Authorised User\source\repos\Loyaltyapp\bin\Debug\netcoreapp3.1\Loyaltyapp.exe
 C:\Users\Authorised User\source\repos\Loyaltyapp\bin\Debug\netcoreapp3.1\Loyaltyapp.deps.json
 C:\Users\Authorised User\source\repos\Loyaltyapp\bin\Debug\netcoreapp3.1\Loyaltyapp.runtimeconfig.json
 C:\Users\Authorised User\source\repos\Loyaltyapp\bin\Debug\netcoreapp3.1\Loyaltyapp.runtimeconfig.dev.json
 C:\Users\Authorised User\source\repos\Loyaltyapp\bin\Debug\netcoreapp3.1\Loyaltyapp.dll
 C:\Users\Authorised User\source\repos\Loyaltyapp\bin\Debug\netcoreapp3.1\Loyaltyapp.pdb
-C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.csprojAssemblyReference.cache
 C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.AppLogin.resources
+C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.Form2.resources
+C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.Form3.resources
+C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.Form4.resources
+C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.Form5.resources
+C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.Form1.resources
 C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.Properties.Resources.resources
 C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.csproj.GenerateResource.cache
 C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.AssemblyInfoInputs.cache
@@ -14,7 +19,3 @@ C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyalty
 C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.dll
 C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.pdb
 C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.genruntimeconfig.cache
-C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.Form2.resources
-C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.Form3.resources
-C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.Form4.resources
-C:\Users\Authorised User\source\repos\Loyaltyapp\obj\Debug\netcoreapp3.1\Loyaltyapp.Form5.resources

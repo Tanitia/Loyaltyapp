@@ -26,7 +26,7 @@ namespace Loyaltyapp
         private void shopButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 shopForm = new Form3();
+            Form4 shopForm = new Form4();
             shopForm.ShowDialog();
             this.Close();
         }

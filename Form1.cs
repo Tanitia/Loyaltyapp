@@ -46,9 +46,9 @@ namespace Loyaltyapp
             string password = passwordTextbox.Text;
             while (lineOfText != null && found == false) {
                 string[] individual = lineOfText.Split(',');
-                if (email == individual[0].Trim())
+                if (email == individual[1].Trim())
                 {
-                    if (password == individual[1])
+                    if (password == individual[2])
                     {
                         found = true;
                     }
