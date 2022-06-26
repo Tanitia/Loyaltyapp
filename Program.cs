@@ -1,23 +1,34 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Loyaltyapp
 {
-    static class Program
+    public partial class AppLogin : Form
     {
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
-        [STAThread]
         static void Main()
         {
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new AppLogin());
+        }
+
+        private void CreateOrFindTextFile() {
+            //creates file if doesn't exist
+            string applicationPath = Directory.GetCurrentDirectory() + "\\";
+            if (!File.Exists(applicationPath + "userInfo.txt")) {
+                StreamWriter myOutputStream = File.CreateText("userInfo.txt");
+                myOutputStream.Close();
+            }
+            
+
         }
     }
 }

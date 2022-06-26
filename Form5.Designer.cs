@@ -1,7 +1,7 @@
 ﻿
 namespace Loyaltyapp
 {
-    partial class Form3
+    partial class Form5
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,20 @@ namespace Loyaltyapp
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.logoBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.QRBox = new System.Windows.Forms.PictureBox();
-            this.pastButton = new System.Windows.Forms.Button();
-            this.shopButton = new System.Windows.Forms.Button();
-            this.cardLabel = new System.Windows.Forms.Label();
             this.welcomeLabel = new System.Windows.Forms.Label();
-            this.nameLabel = new System.Windows.Forms.Label();
             this.welcomeNameLabel = new System.Windows.Forms.Label();
-            this.numberLabel = new System.Windows.Forms.Label();
-            this.signoutButton = new System.Windows.Forms.Button();
+            this.cardLabel = new System.Windows.Forms.Label();
             this.genNumberLabel = new System.Windows.Forms.Label();
+            this.thanksLabel = new System.Windows.Forms.Label();
+            this.timeLabel = new System.Windows.Forms.Label();
+            this.vouchersLabel = new System.Windows.Forms.Label();
+            this.cashbackLabel = new System.Windows.Forms.Label();
+            this.earnedLabel = new System.Windows.Forms.Label();
+            this.backButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QRBox)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +54,7 @@ namespace Loyaltyapp
             this.logoBox.Name = "logoBox";
             this.logoBox.Size = new System.Drawing.Size(125, 41);
             this.logoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logoBox.TabIndex = 2;
+            this.logoBox.TabIndex = 4;
             this.logoBox.TabStop = false;
             // 
             // label1
@@ -62,7 +63,7 @@ namespace Loyaltyapp
             this.label1.Location = new System.Drawing.Point(153, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 20);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 5;
             this.label1.Text = "Loyalty";
             // 
             // QRBox
@@ -72,54 +73,17 @@ namespace Loyaltyapp
             this.QRBox.Name = "QRBox";
             this.QRBox.Size = new System.Drawing.Size(156, 160);
             this.QRBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.QRBox.TabIndex = 4;
+            this.QRBox.TabIndex = 6;
             this.QRBox.TabStop = false;
-            // 
-            // pastButton
-            // 
-            this.pastButton.Location = new System.Drawing.Point(111, 397);
-            this.pastButton.Name = "pastButton";
-            this.pastButton.Size = new System.Drawing.Size(167, 29);
-            this.pastButton.TabIndex = 5;
-            this.pastButton.Text = "Past Rewards";
-            this.pastButton.UseVisualStyleBackColor = true;
-            this.pastButton.Click += new System.EventHandler(this.pastButton_Click);
-            // 
-            // shopButton
-            // 
-            this.shopButton.Location = new System.Drawing.Point(111, 349);
-            this.shopButton.Name = "shopButton";
-            this.shopButton.Size = new System.Drawing.Size(167, 29);
-            this.shopButton.TabIndex = 6;
-            this.shopButton.Text = "Wallet and Shop";
-            this.shopButton.UseVisualStyleBackColor = true;
-            this.shopButton.Click += new System.EventHandler(this.shopButton_Click);
-            // 
-            // cardLabel
-            // 
-            this.cardLabel.AutoSize = true;
-            this.cardLabel.Location = new System.Drawing.Point(67, 305);
-            this.cardLabel.Name = "cardLabel";
-            this.cardLabel.Size = new System.Drawing.Size(115, 20);
-            this.cardLabel.TabIndex = 7;
-            this.cardLabel.Text = "Loyalty Card No";
             // 
             // welcomeLabel
             // 
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Location = new System.Drawing.Point(111, 98);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(72, 20);
-            this.welcomeLabel.TabIndex = 8;
-            this.welcomeLabel.Text = "Welcome";
-            // 
-            // nameLabel
-            // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(190, 98);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(0, 20);
-            this.nameLabel.TabIndex = 9;
+            this.welcomeLabel.Size = new System.Drawing.Size(24, 20);
+            this.welcomeLabel.TabIndex = 9;
+            this.welcomeLabel.Text = "Hi";
             // 
             // welcomeNameLabel
             // 
@@ -127,27 +91,18 @@ namespace Loyaltyapp
             this.welcomeNameLabel.Location = new System.Drawing.Point(188, 98);
             this.welcomeNameLabel.Name = "welcomeNameLabel";
             this.welcomeNameLabel.Size = new System.Drawing.Size(15, 20);
-            this.welcomeNameLabel.TabIndex = 10;
+            this.welcomeNameLabel.TabIndex = 11;
             this.welcomeNameLabel.Tag = "";
             this.welcomeNameLabel.Text = "-";
             // 
-            // numberLabel
+            // cardLabel
             // 
-            this.numberLabel.AutoSize = true;
-            this.numberLabel.Location = new System.Drawing.Point(188, 305);
-            this.numberLabel.Name = "numberLabel";
-            this.numberLabel.Size = new System.Drawing.Size(0, 20);
-            this.numberLabel.TabIndex = 11;
-            // 
-            // signoutButton
-            // 
-            this.signoutButton.Location = new System.Drawing.Point(111, 444);
-            this.signoutButton.Name = "signoutButton";
-            this.signoutButton.Size = new System.Drawing.Size(167, 29);
-            this.signoutButton.TabIndex = 12;
-            this.signoutButton.Text = "Sign-out";
-            this.signoutButton.UseVisualStyleBackColor = true;
-            this.signoutButton.Click += new System.EventHandler(this.signoutButton_Click);
+            this.cardLabel.AutoSize = true;
+            this.cardLabel.Location = new System.Drawing.Point(67, 305);
+            this.cardLabel.Name = "cardLabel";
+            this.cardLabel.Size = new System.Drawing.Size(115, 20);
+            this.cardLabel.TabIndex = 12;
+            this.cardLabel.Text = "Loyalty Card No";
             // 
             // genNumberLabel
             // 
@@ -155,28 +110,84 @@ namespace Loyaltyapp
             this.genNumberLabel.Location = new System.Drawing.Point(188, 305);
             this.genNumberLabel.Name = "genNumberLabel";
             this.genNumberLabel.Size = new System.Drawing.Size(15, 20);
-            this.genNumberLabel.TabIndex = 13;
+            this.genNumberLabel.TabIndex = 15;
             this.genNumberLabel.Text = "-";
             // 
-            // Form3
+            // thanksLabel
+            // 
+            this.thanksLabel.AutoSize = true;
+            this.thanksLabel.Location = new System.Drawing.Point(97, 337);
+            this.thanksLabel.Name = "thanksLabel";
+            this.thanksLabel.Size = new System.Drawing.Size(182, 20);
+            this.thanksLabel.TabIndex = 16;
+            this.thanksLabel.Text = "Thanks for staying with us!";
+            // 
+            // timeLabel
+            // 
+            this.timeLabel.AutoSize = true;
+            this.timeLabel.Location = new System.Drawing.Point(53, 357);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(285, 20);
+            this.timeLabel.TabIndex = 17;
+            this.timeLabel.Text = "During our time with us, you have bought:";
+            // 
+            // vouchersLabel
+            // 
+            this.vouchersLabel.AutoSize = true;
+            this.vouchersLabel.Location = new System.Drawing.Point(169, 386);
+            this.vouchersLabel.Name = "vouchersLabel";
+            this.vouchersLabel.Size = new System.Drawing.Size(78, 20);
+            this.vouchersLabel.TabIndex = 18;
+            this.vouchersLabel.Text = "x vouchers";
+            // 
+            // cashbackLabel
+            // 
+            this.cashbackLabel.AutoSize = true;
+            this.cashbackLabel.Location = new System.Drawing.Point(169, 406);
+            this.cashbackLabel.Name = "cashbackLabel";
+            this.cashbackLabel.Size = new System.Drawing.Size(80, 20);
+            this.cashbackLabel.TabIndex = 19;
+            this.cashbackLabel.Text = "x cashback";
+            // 
+            // earnedLabel
+            // 
+            this.earnedLabel.AutoSize = true;
+            this.earnedLabel.Location = new System.Drawing.Point(111, 426);
+            this.earnedLabel.Name = "earnedLabel";
+            this.earnedLabel.Size = new System.Drawing.Size(188, 20);
+            this.earnedLabel.TabIndex = 20;
+            this.earnedLabel.Text = "And earned x points! Wow!";
+            // 
+            // backButton
+            // 
+            this.backButton.Location = new System.Drawing.Point(153, 460);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(94, 29);
+            this.backButton.TabIndex = 21;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 501);
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.earnedLabel);
+            this.Controls.Add(this.cashbackLabel);
+            this.Controls.Add(this.vouchersLabel);
+            this.Controls.Add(this.timeLabel);
+            this.Controls.Add(this.thanksLabel);
             this.Controls.Add(this.genNumberLabel);
-            this.Controls.Add(this.signoutButton);
-            this.Controls.Add(this.numberLabel);
-            this.Controls.Add(this.welcomeNameLabel);
-            this.Controls.Add(this.nameLabel);
-            this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.cardLabel);
-            this.Controls.Add(this.shopButton);
-            this.Controls.Add(this.pastButton);
+            this.Controls.Add(this.welcomeNameLabel);
+            this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.QRBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.logoBox);
-            this.Name = "Form3";
-            this.Text = "GAME Loyalty Home";
+            this.Name = "Form5";
+            this.Text = "GAME Loyalty Past Rewards";
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QRBox)).EndInit();
             this.ResumeLayout(false);
@@ -189,14 +200,15 @@ namespace Loyaltyapp
         private System.Windows.Forms.PictureBox logoBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox QRBox;
-        private System.Windows.Forms.Button pastButton;
-        private System.Windows.Forms.Button shopButton;
-        private System.Windows.Forms.Label cardLabel;
         private System.Windows.Forms.Label welcomeLabel;
-        private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Label welcomeNameLabel;
-        private System.Windows.Forms.Label numberLabel;
-        private System.Windows.Forms.Button signoutButton;
+        private System.Windows.Forms.Label cardLabel;
         private System.Windows.Forms.Label genNumberLabel;
+        private System.Windows.Forms.Label thanksLabel;
+        private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.Label vouchersLabel;
+        private System.Windows.Forms.Label cashbackLabel;
+        private System.Windows.Forms.Label earnedLabel;
+        private System.Windows.Forms.Button backButton;
     }
 }

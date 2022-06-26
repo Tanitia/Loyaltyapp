@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,50 @@ namespace Loyaltyapp
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void registerLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 signUpForm = new Form2();
+            signUpForm.ShowDialog();
+            this.Close();
+        }
+
+        private void signinButton_Click(object sender, EventArgs e)
+        {
+            bool found = false;
+            string applicationPath = Directory.GetCurrentDirectory() + "\\";
+            StreamReader myInputStream = File.OpenText("userInfo.txt");
+            string lineOfText = myInputStream.ReadLine();
+            string email = emailTextbox.Text;
+            string password = passwordTextbox.Text;
+            while (lineOfText != null && found == false) {
+                string[] individual = lineOfText.Split(',');
+                if (email == individual[0].Trim())
+                {
+                    if (password == individual[1])
+                    {
+                        found = true;
+                    }
+                }
+                else {
+                    lineOfText = myInputStream.ReadLine();
+                }
+
+            }
+            myInputStream.Close();
+            if (found == false)
+            {
+                errorLabel.Text = "Please check login details";
+            }
+            else {
+                this.Hide();
+                Form3 homeForm = new Form3();
+                homeForm.ShowDialog();
+                this.Close();
+            }
+            
         }
     }
 }

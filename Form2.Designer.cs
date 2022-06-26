@@ -118,6 +118,7 @@ namespace Loyaltyapp
             this.signinLabel.Size = new System.Drawing.Size(56, 20);
             this.signinLabel.TabIndex = 9;
             this.signinLabel.Text = "Sign-in";
+            this.signinLabel.Click += new System.EventHandler(this.signinLabel_Click);
             // 
             // passwordLabel
             // 

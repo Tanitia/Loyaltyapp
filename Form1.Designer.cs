@@ -38,6 +38,7 @@ namespace Loyaltyapp
             this.passwordTextbox = new System.Windows.Forms.TextBox();
             this.signinButton = new System.Windows.Forms.Button();
             this.registerLabel = new System.Windows.Forms.Label();
+            this.errorLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,6 +107,7 @@ namespace Loyaltyapp
             this.signinButton.TabIndex = 6;
             this.signinButton.Text = "Sign-in";
             this.signinButton.UseVisualStyleBackColor = true;
+            this.signinButton.Click += new System.EventHandler(this.signinButton_Click);
             // 
             // registerLabel
             // 
@@ -116,6 +118,17 @@ namespace Loyaltyapp
             this.registerLabel.Size = new System.Drawing.Size(63, 20);
             this.registerLabel.TabIndex = 7;
             this.registerLabel.Text = "Register";
+            this.registerLabel.Click += new System.EventHandler(this.registerLabel_Click);
+            // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.errorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.errorLabel.Location = new System.Drawing.Point(162, 304);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(0, 20);
+            this.errorLabel.TabIndex = 8;
             // 
             // AppLogin
             // 
@@ -123,6 +136,7 @@ namespace Loyaltyapp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(377, 501);
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.registerLabel);
             this.Controls.Add(this.signinButton);
             this.Controls.Add(this.passwordTextbox);
@@ -150,6 +164,7 @@ namespace Loyaltyapp
         private System.Windows.Forms.TextBox passwordTextbox;
         private System.Windows.Forms.Button signinButton;
         private System.Windows.Forms.Label registerLabel;
+        private System.Windows.Forms.Label errorLabel;
     }
 }
 

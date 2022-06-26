@@ -14,5 +14,29 @@ namespace Loyaltyapp
         {
             InitializeComponent();
         }
+
+        private void signoutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 signUpForm = new Form2();
+            signUpForm.ShowDialog();
+            this.Close();
+        }
+
+        private void shopButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form3 shopForm = new Form3();
+            shopForm.ShowDialog();
+            this.Close();
+        }
+
+        private void pastButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form5 pastForm = new Form5();
+            pastForm.ShowDialog();
+            this.Close();
+        }
     }
 }
