@@ -76,6 +76,7 @@ namespace Loyaltyapp
             this.QRBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.QRBox.TabIndex = 5;
             this.QRBox.TabStop = false;
+            this.QRBox.Click += new System.EventHandler(this.QRBox_Click);
             // 
             // cardLabel
             // 
@@ -140,6 +141,7 @@ namespace Loyaltyapp
             this.voucherButton.TabIndex = 19;
             this.voucherButton.Text = "Buy £5 E-Voucher";
             this.voucherButton.UseVisualStyleBackColor = false;
+            this.voucherButton.Click += new System.EventHandler(this.voucherButton_Click);
             // 
             // creditButton
             // 

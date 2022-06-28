@@ -74,6 +74,7 @@ namespace Loyaltyapp
             this.QRBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.QRBox.TabIndex = 4;
             this.QRBox.TabStop = false;
+            this.QRBox.Click += new System.EventHandler(this.QRBox_Click);
             // 
             // pastButton
             // 

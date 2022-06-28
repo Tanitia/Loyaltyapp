@@ -48,7 +48,7 @@ namespace Loyaltyapp
                 string[] individual = lineOfText.Split(',');
                 if (email == individual[1].Trim())
                 {
-                    if (password == individual[2])
+                    if (password == individual[2].Trim())
                     {
                         found = true;
                     }
@@ -64,8 +64,12 @@ namespace Loyaltyapp
                 errorLabel.Text = "Please check login details";
             }
             else {
-                this.Hide();
+                StreamWriter currentUserWriter = File.CreateText(applicationPath + "currentUser.txt");
+                currentUserWriter.Write(emailTextbox.Text);
+                currentUserWriter.Close();
+                
                 Form3 homeForm = new Form3();
+                this.Hide();
                 homeForm.ShowDialog();
                 this.Close();
             }

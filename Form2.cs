@@ -26,10 +26,14 @@ namespace Loyaltyapp
                     StreamWriter myOutputStream = File.CreateText("userInfo.txt");
                     myOutputStream.Close();
                 }
-                // Creates a file on the HDD at the applicationPath location called, "MyFile.txt"
+                // Creates a file on the HDD at the applicationPath location"
                 StreamWriter mOutputStream = File.AppendText(applicationPath + "userInfo.txt");
-                mOutputStream.WriteLine(nameTextbox.Text+ ","+ emailTextbox.Text+ ","+ passwordTextbox.Text + "," + Convert.ToString(numGen()));
+                mOutputStream.WriteLine(nameTextbox.Text+ ","+ emailTextbox.Text+ ","+ passwordTextbox.Text + "," + Convert.ToString(numGen()) + "," + "0" + "," + "0");
                 mOutputStream.Close();
+                this.Hide();
+                AppLogin signUpForm = new AppLogin();
+                signUpForm.ShowDialog();
+                this.Close();
             }
         }
 
