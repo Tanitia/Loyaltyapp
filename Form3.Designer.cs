@@ -42,6 +42,7 @@ namespace Loyaltyapp
             this.numberLabel = new System.Windows.Forms.Label();
             this.signoutButton = new System.Windows.Forms.Button();
             this.genNumberLabel = new System.Windows.Forms.Label();
+            this.messageLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QRBox)).BeginInit();
             this.SuspendLayout();
@@ -159,11 +160,22 @@ namespace Loyaltyapp
             this.genNumberLabel.TabIndex = 13;
             this.genNumberLabel.Text = "-";
             // 
+            // messageLabel
+            // 
+            this.messageLabel.AutoSize = true;
+            this.messageLabel.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.messageLabel.Location = new System.Drawing.Point(277, 203);
+            this.messageLabel.Name = "messageLabel";
+            this.messageLabel.Size = new System.Drawing.Size(96, 20);
+            this.messageLabel.TabIndex = 14;
+            this.messageLabel.Text = "Please scan!";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 501);
+            this.Controls.Add(this.messageLabel);
             this.Controls.Add(this.genNumberLabel);
             this.Controls.Add(this.signoutButton);
             this.Controls.Add(this.numberLabel);
@@ -199,5 +211,6 @@ namespace Loyaltyapp
         private System.Windows.Forms.Label numberLabel;
         private System.Windows.Forms.Button signoutButton;
         private System.Windows.Forms.Label genNumberLabel;
+        private System.Windows.Forms.Label messageLabel;
     }
 }

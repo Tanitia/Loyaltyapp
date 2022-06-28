@@ -43,6 +43,7 @@ namespace Loyaltyapp
             this.cashbackLabel = new System.Windows.Forms.Label();
             this.earnedLabel = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
+            this.messageLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QRBox)).BeginInit();
             this.SuspendLayout();
@@ -168,11 +169,22 @@ namespace Loyaltyapp
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
+            // messageLabel
+            // 
+            this.messageLabel.AutoSize = true;
+            this.messageLabel.Font = new System.Drawing.Font("Segoe UI", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.messageLabel.Location = new System.Drawing.Point(111, 285);
+            this.messageLabel.Name = "messageLabel";
+            this.messageLabel.Size = new System.Drawing.Size(156, 17);
+            this.messageLabel.TabIndex = 22;
+            this.messageLabel.Text = "Scan QR to show history";
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 501);
+            this.Controls.Add(this.messageLabel);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.earnedLabel);
             this.Controls.Add(this.cashbackLabel);
@@ -210,5 +222,6 @@ namespace Loyaltyapp
         private System.Windows.Forms.Label cashbackLabel;
         private System.Windows.Forms.Label earnedLabel;
         private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Label messageLabel;
     }
 }

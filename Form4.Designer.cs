@@ -44,6 +44,8 @@ namespace Loyaltyapp
             this.simulateSpendButton = new System.Windows.Forms.Button();
             this.simulatePointsButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
+            this.poundLabel = new System.Windows.Forms.Label();
+            this.messageLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QRBox)).BeginInit();
             this.SuspendLayout();
@@ -172,6 +174,7 @@ namespace Loyaltyapp
             this.simulatePointsButton.TabIndex = 22;
             this.simulatePointsButton.Text = "Simulate 500pts gain";
             this.simulatePointsButton.UseVisualStyleBackColor = true;
+            this.simulatePointsButton.Click += new System.EventHandler(this.simulatePointsButton_Click);
             // 
             // backButton
             // 
@@ -183,11 +186,32 @@ namespace Loyaltyapp
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
+            // poundLabel
+            // 
+            this.poundLabel.AutoSize = true;
+            this.poundLabel.Location = new System.Drawing.Point(177, 373);
+            this.poundLabel.Name = "poundLabel";
+            this.poundLabel.Size = new System.Drawing.Size(17, 20);
+            this.poundLabel.TabIndex = 24;
+            this.poundLabel.Text = "£";
+            // 
+            // messageLabel
+            // 
+            this.messageLabel.AutoSize = true;
+            this.messageLabel.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.messageLabel.Location = new System.Drawing.Point(88, 106);
+            this.messageLabel.Name = "messageLabel";
+            this.messageLabel.Size = new System.Drawing.Size(201, 20);
+            this.messageLabel.TabIndex = 25;
+            this.messageLabel.Text = "Scan QR to access rewards!";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 501);
+            this.Controls.Add(this.messageLabel);
+            this.Controls.Add(this.poundLabel);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.simulatePointsButton);
             this.Controls.Add(this.simulateSpendButton);
@@ -227,5 +251,7 @@ namespace Loyaltyapp
         private System.Windows.Forms.Button simulateSpendButton;
         private System.Windows.Forms.Button simulatePointsButton;
         private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Label poundLabel;
+        private System.Windows.Forms.Label messageLabel;
     }
 }
