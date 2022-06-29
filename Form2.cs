@@ -19,16 +19,16 @@ namespace Loyaltyapp
 
         private void signupButton_Click(object sender, EventArgs e)
         {
-            if (nameTextbox.Text != null && emailTextbox.Text != null && passwordTextbox.Text != null) {
+            if (nameTextbox.Text.Contains("@") && nameTextbox.Text != null && emailTextbox.Text != null && passwordTextbox.Text != null) {
                 string applicationPath = Directory.GetCurrentDirectory() + "\\";
                 if (!File.Exists(applicationPath + "userInfo.txt"))
                 {
                     StreamWriter myOutputStream = File.CreateText("userInfo.txt");
                     myOutputStream.Close();
                 }
-                // Creates a file on the HDD at the applicationPath location"
+                // Creates a file on the HDD at the applicationPath location
                 StreamWriter mOutputStream = File.AppendText(applicationPath + "userInfo.txt");
-                mOutputStream.WriteLine(nameTextbox.Text+ ","+ emailTextbox.Text+ ","+ passwordTextbox.Text + "," + Convert.ToString(numGen()) + "," + "0" + "," + "0");
+                mOutputStream.WriteLine(nameTextbox.Text+ ","+ emailTextbox.Text+ ","+ passwordTextbox.Text + "," + Convert.ToString(numGen()) + "," + "0" + "," + "0" + "," + "0" + "," + "0" + "," + "0");
                 mOutputStream.Close();
                 this.Hide();
                 AppLogin signUpForm = new AppLogin();

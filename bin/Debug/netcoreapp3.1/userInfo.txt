@@ -1,1 +1,2 @@
-tanitia,tanitia@email.com,password,19550052,0,5,0,0
+Tanitia Moore,tanitia@email.com,password,74272578,0,0,0,0,0
+Richard,rickemon@email.com,password,55281247,3000,30,6500,10,5

@@ -154,6 +154,7 @@ namespace Loyaltyapp
             this.creditButton.TabIndex = 20;
             this.creditButton.Text = "Buy £5 Credit";
             this.creditButton.UseVisualStyleBackColor = false;
+            this.creditButton.Click += new System.EventHandler(this.creditButton_Click);
             // 
             // simulateSpendButton
             // 
@@ -163,7 +164,7 @@ namespace Loyaltyapp
             this.simulateSpendButton.TabIndex = 21;
             this.simulateSpendButton.Text = "Simulate £5 Spend";
             this.simulateSpendButton.UseVisualStyleBackColor = true;
-            this.simulateSpendButton.Click += new System.EventHandler(this.button1_Click);
+            this.simulateSpendButton.Click += new System.EventHandler(this.simulateSpendButton_Click);
             // 
             // simulatePointsButton
             // 

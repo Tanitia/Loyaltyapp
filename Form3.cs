@@ -20,7 +20,7 @@ namespace Loyaltyapp
         private void signoutButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 signUpForm = new Form2();
+            AppLogin signUpForm = new AppLogin();
             signUpForm.ShowDialog();
             this.Close();
         }

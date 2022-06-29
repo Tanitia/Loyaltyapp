@@ -33,7 +33,6 @@ namespace Loyaltyapp
             this.logoBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.QRBox = new System.Windows.Forms.PictureBox();
-            this.welcomeLabel = new System.Windows.Forms.Label();
             this.welcomeNameLabel = new System.Windows.Forms.Label();
             this.cardLabel = new System.Windows.Forms.Label();
             this.genNumberLabel = new System.Windows.Forms.Label();
@@ -76,25 +75,17 @@ namespace Loyaltyapp
             this.QRBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.QRBox.TabIndex = 6;
             this.QRBox.TabStop = false;
-            // 
-            // welcomeLabel
-            // 
-            this.welcomeLabel.AutoSize = true;
-            this.welcomeLabel.Location = new System.Drawing.Point(111, 98);
-            this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(24, 20);
-            this.welcomeLabel.TabIndex = 9;
-            this.welcomeLabel.Text = "Hi";
+            this.QRBox.Click += new System.EventHandler(this.QRBox_Click);
             // 
             // welcomeNameLabel
             // 
             this.welcomeNameLabel.AutoSize = true;
-            this.welcomeNameLabel.Location = new System.Drawing.Point(188, 98);
+            this.welcomeNameLabel.Location = new System.Drawing.Point(86, 106);
             this.welcomeNameLabel.Name = "welcomeNameLabel";
-            this.welcomeNameLabel.Size = new System.Drawing.Size(15, 20);
+            this.welcomeNameLabel.Size = new System.Drawing.Size(193, 20);
             this.welcomeNameLabel.TabIndex = 11;
             this.welcomeNameLabel.Tag = "";
-            this.welcomeNameLabel.Text = "-";
+            this.welcomeNameLabel.Text = "Hi! Please scan to show info";
             // 
             // cardLabel
             // 
@@ -194,7 +185,6 @@ namespace Loyaltyapp
             this.Controls.Add(this.genNumberLabel);
             this.Controls.Add(this.cardLabel);
             this.Controls.Add(this.welcomeNameLabel);
-            this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.QRBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.logoBox);
@@ -212,7 +202,6 @@ namespace Loyaltyapp
         private System.Windows.Forms.PictureBox logoBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox QRBox;
-        private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.Label welcomeNameLabel;
         private System.Windows.Forms.Label cardLabel;
         private System.Windows.Forms.Label genNumberLabel;
