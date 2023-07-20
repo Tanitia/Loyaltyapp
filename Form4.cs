@@ -19,17 +19,21 @@ namespace Loyaltyapp
         private void simulateSpendButton_Click(object sender, EventArgs e)
         {
             string applicationPath = Directory.GetCurrentDirectory() + "\\";
+            //if qr scanned
             if (moneyGetLabel.Text != "-") {
+                //if use has enough money
                 if (Convert.ToInt16(moneyGetLabel.Text) >= 5) {
                 int money = Convert.ToInt16(moneyGetLabel.Text);
                 money = money - 5;
+                    //update new value to gui
                 moneyGetLabel.Text = Convert.ToString(money);
                 StreamReader customerReader = File.OpenText(applicationPath + "currentUser.txt");
-                string email = customerReader.ReadLine().Trim();
+                string email = customerReader.ReadLine();
                 customerReader.Close();
                 var reader = new StreamReader(File.OpenRead(applicationPath + "userInfo.txt"));
                 List<List<string>> allUsers = new List<List<string>>();
                 List<string> user;
+                    //update values in file
                 while (!reader.EndOfStream)
                 {
                     user = new List<string>();
@@ -67,7 +71,7 @@ namespace Loyaltyapp
 
 
         private void backButton_Click(object sender, EventArgs e)
-        {
+        {//load home screen
             this.Hide();
             Form3 homeForm = new Form3();
             homeForm.ShowDialog();
@@ -77,8 +81,9 @@ namespace Loyaltyapp
         private void QRBox_Click(object sender, EventArgs e)
         {
             string applicationPath = Directory.GetCurrentDirectory() + "\\";
+            //finds current user
             StreamReader customerReader = File.OpenText(applicationPath + "currentUser.txt");
-            string email = customerReader.ReadLine().Trim();
+            string email = customerReader.ReadLine();
             customerReader.Close();
             bool found = false;
             string numberLabel = "";
@@ -89,8 +94,9 @@ namespace Loyaltyapp
             while (lineOfText != null && found == false)
             {
                 string[] individual = lineOfText.Split(',');
-                if (email == individual[1].Trim())
+                if (email == individual[1])
                 {
+                    //assigns current user values to local variables
                     numberLabel = individual[3];
                     points = individual[4];
                     money = individual[5];
@@ -98,9 +104,11 @@ namespace Loyaltyapp
                 }
                 else
                 {
+                    //carries on reading until correct user found
                     lineOfText = detailsReader.ReadLine();
                 }
             }
+            //assigns variables to labels
             genNumberLabel.Text = numberLabel;
             pointsGetLabel.Text = points;
             moneyGetLabel.Text = money;
@@ -110,7 +118,9 @@ namespace Loyaltyapp
         private void voucherButton_Click(object sender, EventArgs e)
         {
             string applicationPath = Directory.GetCurrentDirectory() + "\\";
+            //if qr code scanned
             if (pointsGetLabel.Text != "-") {
+                //if user has enough points
                 if (Convert.ToInt16(pointsGetLabel.Text) >= 500)
                 {
                     int currentPoints = Convert.ToInt16(pointsGetLabel.Text);
@@ -120,7 +130,7 @@ namespace Loyaltyapp
                     pointsGetLabel.Text = Convert.ToString(currentPoints);
                     moneyGetLabel.Text = Convert.ToString(money);
                     StreamReader customerReader = File.OpenText(applicationPath + "currentUser.txt");
-                    string email = customerReader.ReadLine().Trim();
+                    string email = customerReader.ReadLine();
                     customerReader.Close();
                     var reader = new StreamReader(File.OpenRead(applicationPath + "userInfo.txt"));
                     List<List<string>> allUsers = new List<List<string>>();
@@ -164,12 +174,13 @@ namespace Loyaltyapp
         private void simulatePointsButton_Click(object sender, EventArgs e)
         {
             string applicationPath = Directory.GetCurrentDirectory() + "\\";
+            //if qr scanned
             if (pointsGetLabel.Text != "-") {
                 int currentPoints = Convert.ToInt16(pointsGetLabel.Text);
                 currentPoints = currentPoints + 500;
                 pointsGetLabel.Text = Convert.ToString(currentPoints);
                 StreamReader customerReader = File.OpenText(applicationPath + "currentUser.txt");
-                string email = customerReader.ReadLine().Trim();
+                string email = customerReader.ReadLine();
                 customerReader.Close();
                 var reader = new StreamReader(File.OpenRead(applicationPath + "userInfo.txt"));
          
@@ -215,8 +226,9 @@ namespace Loyaltyapp
         private void creditButton_Click(object sender, EventArgs e)
         {
             string applicationPath = Directory.GetCurrentDirectory() + "\\";
-            if (pointsGetLabel.Text != "-")
+            if (pointsGetLabel.Text != "-") //if qr scanned
             {
+                //if user has enough points
                 if (Convert.ToInt16(pointsGetLabel.Text) >= 500)
                 {
                     int currentPoints = Convert.ToInt16(pointsGetLabel.Text);
@@ -226,7 +238,7 @@ namespace Loyaltyapp
                     pointsGetLabel.Text = Convert.ToString(currentPoints);
                     moneyGetLabel.Text = Convert.ToString(money);
                     StreamReader customerReader = File.OpenText(applicationPath + "currentUser.txt");
-                    string email = customerReader.ReadLine().Trim();
+                    string email = customerReader.ReadLine();
                     customerReader.Close();
                     var reader = new StreamReader(File.OpenRead(applicationPath + "userInfo.txt"));
                     List<List<string>> allUsers = new List<List<string>>();

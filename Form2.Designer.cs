@@ -40,6 +40,8 @@ namespace Loyaltyapp
             this.signinLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.passwordTextbox = new System.Windows.Forms.TextBox();
+            this.messageLabel = new System.Windows.Forms.Label();
+            this.newMessageLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,12 +140,34 @@ namespace Loyaltyapp
             this.passwordTextbox.Size = new System.Drawing.Size(231, 27);
             this.passwordTextbox.TabIndex = 11;
             // 
+            // messageLabel
+            // 
+            this.messageLabel.AutoSize = true;
+            this.messageLabel.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.messageLabel.ForeColor = System.Drawing.Color.Maroon;
+            this.messageLabel.Location = new System.Drawing.Point(-350, 198);
+            this.messageLabel.Name = "messageLabel";
+            this.messageLabel.Size = new System.Drawing.Size(0, 20);
+            this.messageLabel.TabIndex = 12;
+            // 
+            // newMessageLabel
+            // 
+            this.newMessageLabel.AutoSize = true;
+            this.newMessageLabel.ForeColor = System.Drawing.Color.Maroon;
+            this.newMessageLabel.Location = new System.Drawing.Point(31, 320);
+            this.newMessageLabel.Name = "newMessageLabel";
+            this.newMessageLabel.Size = new System.Drawing.Size(13, 20);
+            this.newMessageLabel.TabIndex = 13;
+            this.newMessageLabel.Text = " ";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(377, 501);
+            this.Controls.Add(this.newMessageLabel);
+            this.Controls.Add(this.messageLabel);
             this.Controls.Add(this.passwordTextbox);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.signinLabel);
@@ -174,5 +198,7 @@ namespace Loyaltyapp
         private System.Windows.Forms.Label signinLabel;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.TextBox passwordTextbox;
+        private System.Windows.Forms.Label messageLabel;
+        private System.Windows.Forms.Label newMessageLabel;
     }
 }

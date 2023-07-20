@@ -19,6 +19,7 @@ namespace Loyaltyapp
         
         private void signoutButton_Click(object sender, EventArgs e)
         {
+            //redirects to login
             this.Hide();
             AppLogin signUpForm = new AppLogin();
             signUpForm.ShowDialog();
@@ -27,6 +28,7 @@ namespace Loyaltyapp
 
         private void shopButton_Click(object sender, EventArgs e)
         {
+            //redirects to shop
             this.Hide();
             Form4 shopForm = new Form4();
             shopForm.ShowDialog();
@@ -35,6 +37,7 @@ namespace Loyaltyapp
 
         private void pastButton_Click(object sender, EventArgs e)
         {
+            //navigates to past rewards
             this.Hide();
             Form5 pastForm = new Form5();
             pastForm.ShowDialog();
@@ -43,9 +46,10 @@ namespace Loyaltyapp
 
         private void QRBox_Click(object sender, EventArgs e)
         {
+            //loads in user credentials into censored labels
             string applicationPath = Directory.GetCurrentDirectory() + "\\";
             StreamReader customerReader = File.OpenText(applicationPath + "currentUser.txt");
-            string email = customerReader.ReadLine().Trim();
+            string email = customerReader.ReadLine();
             customerReader.Close();
             bool found = false;
             string usersName = "";
@@ -55,7 +59,7 @@ namespace Loyaltyapp
             while (lineOfText != null && found == false)
             {
                 string[] individual = lineOfText.Split(',');
-                if (email == individual[1].Trim())
+                if (email == individual[1])
                 {
                     usersName = individual[0];
                     numberLabel = individual[3];

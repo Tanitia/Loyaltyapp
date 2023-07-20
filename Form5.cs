@@ -18,6 +18,7 @@ namespace Loyaltyapp
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            //nav to home
             this.Hide();
             Form3 homeForm = new Form3();
             homeForm.ShowDialog();
@@ -26,9 +27,10 @@ namespace Loyaltyapp
 
         private void QRBox_Click(object sender, EventArgs e)
         {
+            //loads in user's info that is otherwise censored
             string applicationPath = Directory.GetCurrentDirectory() + "\\";
             StreamReader customerReader = File.OpenText(applicationPath + "currentUser.txt");
-            string email = customerReader.ReadLine().Trim();
+            string email = customerReader.ReadLine();
             customerReader.Close();
             bool found = false;
             string usersName = "";
@@ -41,7 +43,7 @@ namespace Loyaltyapp
             while (lineOfText != null && found == false)
             {
                 string[] individual = lineOfText.Split(',');
-                if (email == individual[1].Trim())
+                if (email == individual[1])
                 {
                     usersName = individual[0];
                     numberLabel = individual[3];
@@ -55,6 +57,7 @@ namespace Loyaltyapp
                     lineOfText = detailsReader.ReadLine();
                 }
             }
+            //loands info into label
             welcomeNameLabel.Text = "Hi   " + usersName;
             genNumberLabel.Text = numberLabel;
             vouchersLabel.Text = totalVouchers + " vouchers";
