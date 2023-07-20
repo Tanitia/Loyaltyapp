@@ -1,9 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "i7N7PE/Y0ac7AVvpBI9qmymkYXpgQE2Toijyaz5hTbPMXshdD6SefwfqjXkDchl5SWpf3Gnu3vfjcgAPs8WaOQ==",
+  "dgSpecHash": "FNaypAnHJDqxP9ePALh/R5IDLKXe31hbSVdIZlC+T7guMu3Z4AJuEKd3zaKBkSCCO10w4sOM6boYYWi81zcJhA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Authorised User\\source\\repos\\Loyaltyapp\\Loyaltyapp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Authorised User\\.nuget\\packages\\microsoft.data.sqlite\\6.0.6\\microsoft.data.sqlite.6.0.6.nupkg.sha512",
+    "C:\\Users\\Authorised User\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.6\\microsoft.data.sqlite.core.6.0.6.nupkg.sha512",
+    "C:\\Users\\Authorised User\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.6\\sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",
+    "C:\\Users\\Authorised User\\.nuget\\packages\\sqlitepclraw.core\\2.0.6\\sqlitepclraw.core.2.0.6.nupkg.sha512",
+    "C:\\Users\\Authorised User\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.6\\sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",
+    "C:\\Users\\Authorised User\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.6\\sqlitepclraw.provider.e_sqlite3.2.0.6.nupkg.sha512",
+    "C:\\Users\\Authorised User\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Authorised User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
   ],
   "logs": []

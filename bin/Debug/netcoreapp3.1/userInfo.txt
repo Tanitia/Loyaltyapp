@@ -1,0 +1,5 @@
+amanda,amanda@email.com,caramel,96490553,0,0,0,0,0
+Liam,liam@email.com,football,94830417,0,0,2000,0,4
+lucy,lucy@email.com,panda,63895585,0,0,0,0,0
+tanitia,tanitia@tanitia.com,ssssss,95462717,0,0,0,0,0
+tea,tea@email.com,123,92972547,1500,10,3000,5,2
